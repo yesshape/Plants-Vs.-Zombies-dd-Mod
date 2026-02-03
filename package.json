@@ -1,0 +1,12 @@
+{
+  "name": "pvz-dd-mod",
+  "version": "1.0.0",
+  "description": "植物大战僵尸dd版网站",
+  "main": "index.html",
+  "scripts": {
+    "deploy": "echo 'Deploying static site to Cloudflare Pages'"
+  },
+  "keywords": ["plants-vs-zombies", "game", "mod"],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植物大战僵尸dd版 - Plants Vs. Zombies dd Mod</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+</head>
+<body class="light-mode">
+    <!-- 暗色模式切换按钮 -->
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-btn" title="切换暗色模式">
+            <i class="fas fa-moon"></i>
+            <span class="theme-text" data-lang="zh">暗色模式</span>
+            <span class="theme-text" data-lang="en" style="display:none;">Dark Mode</span>
+        </button>
+    </div>
+    
+    <!-- 语言切换按钮 -->
+    <div class="language-switcher">
+        <button id="langZh" class="lang-btn active">中文</button>
+        <button id="langEn" class="lang-btn">English</button>
+    </div>
+    
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/icon.png" alt="游戏图标" class="game-icon">
+                    <span data-lang="zh">植物大战僵尸dd版</span>
+                    <span data-lang="en" style="display:none;">Plants Vs. Zombies dd Mod</span>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" data-lang="zh">首页</a><a href="#home" data-lang="en" style="display:none;">Home</a></li>
+                    <li><a href="#intro" data-lang="zh">简介</a><a href="#intro" data-lang="en" style="display:none;">Intro</a></li>
+                    <li><a href="#features" data-lang="zh">特性</a><a href="#features" data-lang="en" style="display:none;">Features</a></li>
+                    <li><a href="#plants" data-lang="zh">植物图鉴</a><a href="#plants" data-lang="en" style="display:none;">Plants</a></li>
+                    <li><a href="#zombies" data-lang="zh">僵尸图鉴</a><a href="#zombies" data-lang="en" style="display:none;">Zombies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!-- 英雄区域 -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1 data-lang="zh">植物大战僵尸dd版</h1>
+                <h1 data-lang="en" style="display:none;">Plants Vs. Zombies dd Mod</h1>
+                <p data-lang="zh">经典塔防游戏的深度修改版本，添加了全新植物、僵尸、关卡和游戏机制，带来前所未有的挑战与乐趣！</p>
+                <p data-lang="en" style="display:none;">A deep modification of the classic tower defense game, adding new plants, zombies, levels and game mechanics for unprecedented challenges and fun!</p>
+                <a href="#intro" class="btn" data-lang="zh">探索dd版世界</a>
+                <a href="#intro" class="btn" data-lang="en" style="display:none;">Explore dd Mod World</a>
+            </div>
+        </section>
+        
+        <!-- 简介区域 -->
+        <section id="intro">
+            <div class="container">
+                <h2 data-lang="zh">游戏简介</h2>
+                <h2 data-lang="en" style="display:none;">Game Introduction</h2>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p data-lang="zh">植物大战僵尸dd版（Plants Vs. Zombies dd Mod）是一个基于经典游戏《植物大战僵尸》的非官方修改版本，由游戏爱好者社区开发。</p>
+                        <p data-lang="zh">这个mod在原版游戏的基础上，增加了大量新内容，包括全新植物、僵尸类型、关卡设计和游戏机制，为玩家带来全新的游戏体验。</p>
+                        <p data-lang="zh">dd版注重游戏平衡性和策略深度，同时保留了原作的幽默风格和经典玩法，是老玩家重温经典和新玩家体验创新的绝佳选择。</p>
+                        <p data-lang="zh">无论你是塔防游戏爱好者，还是植物大战僵尸的忠实粉丝，dd版都将带给你数小时的欢乐游戏时光。</p>
+                        
+                        <p data-lang="en" style="display:none;">Plants Vs. Zombies dd Mod is an unofficial modification based on the classic game Plants Vs. Zombies, developed by the gaming enthusiast community.</p>
+                        <p data-lang="en" style="display:none;">This mod adds a large amount of new content to the original game, including new plants, zombie types, level designs and game mechanics, bringing players a brand new gaming experience.</p>
+                        <p data-lang="en" style="display:none;">The dd version focuses on game balance and strategic depth while retaining the humorous style and classic gameplay of the original, making it an excellent choice for both old players revisiting the classic and new players experiencing innovation.</p>
+                        <p data-lang="en" style="display:none;">Whether you're a tower defense game enthusiast or a loyal fan of Plants Vs. Zombies, the dd version will bring you hours of fun gaming time.</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="images/intro-image.jpg" alt="植物大战僵尸dd版游戏截图">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 特性区域 -->
+        <section id="features" class="section-features">
+            <div class="container">
+                <h2 data-lang="zh">主要特性</h2>
+                <h2 data-lang="en" style="display:none;">Key Features</h2>
+                <div class="features-content">
+                    <div class="features-image">
+                        <img src="images/features-image.jpg" alt="植物大战僵尸dd版特性展示">
+                    </div>
+                    <div class="features-text">
+                        <p data-lang="zh">dd版在保留原版核心玩法的基础上，引入了大量创新内容：</p>
+                        <p data-lang="en" style="display:none;">While retaining the core gameplay of the original, the dd version introduces a large amount of innovative content:</p>
+                        
+                        <ul class="features-list">
+                            <li data-lang="zh">15种全新植物，各有独特能力</li>
+                            <li data-lang="zh">12种新型僵尸，带来全新挑战</li>
+                            <li data-lang="zh">30个全新关卡，包含5个世界场景</li>
+                            <li data-lang="zh">新增天气系统和昼夜变化</li>
+                            <li data-lang="zh">植物升级系统和特殊能力</li>
+                            <li data-lang="zh">重新平衡的游戏经济系统</li>
+                            
+                            <li data-lang="en" style="display:none;">15 new plants, each with unique abilities</li>
+                            <li data-lang="en" style="display:none;">12 new zombie types, bringing new challenges</li>
+                            <li data-lang="en" style="display:none;">30 new levels, including 5 world scenarios</li>
+                            <li data-lang="en" style="display:none;">New weather system and day-night cycle</li>
+                            <li data-lang="en" style="display:none;">Plant upgrade system and special abilities</li>
+                            <li data-lang="en" style="display:none;">Rebalanced game economy system</li>
+                        </ul>
+                        
+                        <p data-lang="zh">这些新特性使得游戏策略更加多样化，每一局游戏都有不同的体验。</p>
+                        <p data-lang="en" style="display:none;">These new features make game strategies more diverse, with each game providing a different experience.</p>
+                    </div>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-seedling"></i>
+                        <h3 data-lang="zh">新植物系统</h3>
+                        <h3 data-lang="en" style="display:none;">New Plant System</h3>
+                        <p data-lang="zh">新增15种独特植物，每种都有特殊能力和升级路径，丰富战术选择。</p>
+                        <p data-lang="en" style="display:none;">15 new unique plants, each with special abilities and upgrade paths, enriching tactical choices.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-ghost"></i>
+                        <h3 data-lang="zh">新僵尸类型</h3>
+                        <h3 data-lang="en" style="display:none;">New Zombie Types</h3>
+                        <p data-lang="zh">12种新型僵尸，拥有特殊技能和行为模式，挑战玩家的防御策略。</p>
+                        <p data-lang="en" style="display:none;">12 new zombie types with special skills and behavior patterns, challenging players' defense strategies.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3 data-lang="zh">扩展关卡</h3>
+                        <h3 data-lang="en" style="display:none;">Extended Levels</h3>
+                        <p data-lang="zh">30个全新关卡，包含5个不同主题世界，每个世界有独特的游戏机制。</p>
+                        <p data-lang="en" style="display:none;">30 new levels, including 5 different themed worlds, each with unique game mechanics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 植物图鉴区域 -->
+        <section id="plants" class="pedia-section">
+            <div class="container">
+                <h2 data-lang="zh">植物图鉴</h2>
+                <h2 data-lang="en" style="display:none;">Plant Gallery</h2>
+                <div class="pedia-container">
+                    <div class="pedia-header">
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all" data-lang="zh">全部植物</button>
+                            <button class="filter-btn active" data-filter="all" data-lang="en" style="display:none;">All Plants</button>
+                            <button class="filter-btn" data-filter="attack" data-lang="zh">攻击型</button>
+                            <button class="filter-btn" data-filter="attack" data-lang="en" style="display:none;">Attack Type</button>
+                            <button class="filter-btn" data-filter="support" data-lang="zh">辅助型</button>
+                            <button class="filter-btn" data-filter="support" data-lang="en" style="display:none;">Support Type</button>
+                        </div>
+                        
+                        <div class="pedia-instruction">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <span data-lang="zh">Shift + 鼠标滚轮水平滚动</span>
+                            <span data-lang="en" style="display:none;">Shift + Mouse wheel to scroll horizontally</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pedia-scroll-container" id="plantsScrollContainer">
+                        <div class="pedia-scroll-content" id="plantsGrid">
+                            <!-- 植物卡片将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="scroll-controls">
+                        <button class="scroll-btn left-scroll-btn" id="plantsScrollLeft">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="scroll-position">
+                            <span id="plantsPosition">1/12</span>
+                        </div>
+                        <button class="scroll-btn right-scroll-btn" id="plantsScrollRight">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 僵尸图鉴区域 -->
+        <section id="zombies" class="pedia-section section-zombies">
+            <div class="container">
+                <h2 data-lang="zh">僵尸图鉴</h2>
+                <h2 data-lang="en" style="display:none;">Zombie Gallery</h2>
+                <div class="pedia-container">
+                    <div class="pedia-header">
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all" data-lang="zh">全部僵尸</button>
+                            <button class="filter-btn active" data-filter="all" data-lang="en" style="display:none;">All Zombies</button>
+                            <button class="filter-btn" data-filter="normal" data-lang="zh">普通型</button>
+                            <button class="filter-btn" data-filter="normal" data-lang="en" style="display:none;">Normal Type</button>
+                            <button class="filter-btn" data-filter="special" data-lang="zh">特殊型</button>
+                            <button class="filter-btn" data-filter="special" data-lang="en" style="display:none;">Special Type</button>
+                            <button class="filter-btn" data-filter="boss" data-lang="zh">BOSS型</button>
+                            <button class="filter-btn" data-filter="boss" data-lang="en" style="display:none;">BOSS Type</button>
+                        </div>
+                        
+                        <div class="pedia-instruction">
+                            <i class="fas fa-mouse-pointer"></i>
+                            <span data-lang="zh">Shift + 鼠标滚轮水平滚动</span>
+                            <span data-lang="en" style="display:none;">Shift + Mouse wheel to scroll horizontally</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pedia-scroll-container" id="zombiesScrollContainer">
+                        <div class="pedia-scroll-content" id="zombiesGrid">
+                            <!-- 僵尸卡片将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="scroll-controls">
+                        <button class="scroll-btn left-scroll-btn" id="zombiesScrollLeft">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="scroll-position">
+                            <span id="zombiesPosition">1/6</span>
+                        </div>
+                        <button class="scroll-btn right-scroll-btn" id="zombiesScrollRight">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-lang="zh">植物大战僵尸dd版</h3>
+                    <h3 data-lang="en" style="display:none;">Plants Vs. Zombies dd Mod</h3>
+                    <p data-lang="zh">一个由粉丝社区制作的《植物大战僵尸》深度修改版本，旨在为玩家带来全新体验。</p>
+                    <p data-lang="en" style="display:none;">A deep modification of Plants Vs. Zombies made by fan community, aiming to bring new experiences to players.</p>
+                    
+                    <!-- 作者网站链接 -->
+                    <div class="author-link">
+                        <a href="https://yes-shape.pages.dev" target="_blank" class="author-btn" data-lang="zh">
+                            <i class="fas fa-external-link-alt"></i> 访问作者网站
+                        </a>
+                        <a href="https://yes-shape.pages.dev" target="_blank" class="author-btn" data-lang="en" style="display:none;">
+                            <i class="fas fa-external-link-alt"></i> Visit Author's Website
+                        </a>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-lang="zh">快速链接</h3>
+                    <h3 data-lang="en" style="display:none;">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-lang="zh">首页</a><a href="#home" data-lang="en" style="display:none;">Home</a></li>
+                        <li><a href="#intro" data-lang="zh">游戏简介</a><a href="#intro" data-lang="en" style="display:none;">Introduction</a></li>
+                        <li><a href="#features" data-lang="zh">主要特性</a><a href="#features" data-lang="en" style="display:none;">Features</a></li>
+                        <li><a href="#plants" data-lang="zh">植物图鉴</a><a href="#plants" data-lang="en" style="display:none;">Plants Gallery</a></li>
+                        <li><a href="#zombies" data-lang="zh">僵尸图鉴</a><a href="#zombies" data-lang="en" style="display:none;">Zombies Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-lang="zh">资源下载</h3>
+                    <h3 data-lang="en" style="display:none;">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-lang="zh">游戏本体下载</a><a href="#" data-lang="en" style="display:none;">Game Download</a></li>
+                        <li><a href="#" data-lang="zh">dd Mod补丁</a><a href="#" data-lang="en" style="display:none;">dd Mod Patch</a></li>
+                        <li><a href="#" data-lang="zh">安装教程</a><a href="#" data-lang="en" style="display:none;">Installation Guide</a></li>
+                        <li><a href="#" data-lang="zh">常见问题</a><a href="#" data-lang="en" style="display:none;">FAQ</a></li>
+                        <li><a href="#" data-lang="zh">社区论坛</a><a href="#" data-lang="en" style="display:none;">Community Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p data-lang="zh">植物大战僵尸dd版 (Plants Vs. Zombies dd Mod) 是一个非官方修改版本，原游戏版权归PopCap Games所有</p>
+                <p data-lang="en" style="display:none;">Plants Vs. Zombies dd Mod is an unofficial modification, original game copyright belongs to PopCap Games</p>
+                <p data-lang="zh">本网站仅为粉丝作品展示，不用于商业用途</p>
+                <p data-lang="en" style="display:none;">This website is only for fan work display, not for commercial use</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
